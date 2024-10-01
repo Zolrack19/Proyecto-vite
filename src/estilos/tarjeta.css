@@ -1,0 +1,51 @@
+acronym {
+    text-decoration: none;
+}
+
+.tarjeta {
+    border: 1px solid rgba(0, 0, 0, 0.422);
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.cabezal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo {
+    text-decoration: none;
+    border: none;
+    height: 50px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /*para añadir los 3 puntos de continue*/
+    line-clamp: 2; /*para que no moleste el corrector*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cabezal > button {
+    background: none;
+    border: none;
+    text-align: center;
+    padding: 0;
+    line-height: 0;
+    padding: 10px 0;
+    align-self: start;
+}
+
+.resultado:hover {
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 1px 1px black;
+}
+
+.resultado {
+    border: 1px solid black;
+    background: none;
+    margin-top: 50px;
+    border-radius: 4px;
+    padding: 3px 5px;
+}

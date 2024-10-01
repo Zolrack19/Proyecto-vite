@@ -1,0 +1,136 @@
+#crear-encuesta {
+    background-color: rgb(68, 193, 109);
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+#carpeta {
+    padding: 5px;
+}
+
+#opciones {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+#opciones:focus {
+    border: none;
+}
+
+#opciones > option {
+    color: black;
+}
+
+.container-propio {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+.derecha {
+    width: 300px;
+    align-self: flex-start;
+}
+
+#btn-plan, #btn-crear-encuesta {
+    height: 40px;
+}
+
+.logo {
+    height: 55px;
+    margin-left: -10px;
+    background-size: contain;
+    background-position: center center;
+}
+
+/* Pantallas pequeñas (máximo 571px) */
+@media (max-width: 571px) {
+    #react-tarjeta {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        margin: 10px 30px;
+    }
+}
+
+/* Pantallas pequeñas (máximo 720px) */
+@media (max-width: 720px) {
+    .container-propio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #react-tarjeta {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        margin: 10px 30px;
+    }
+
+    .izquieda {
+        width: 90%;
+    }
+
+    .derecha {
+        align-self: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .izquieda {
+        width: 50%;
+    }
+
+    #react-tarjeta {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px;
+        margin: 10px 30px;
+    }
+
+}
+
+/* Pantallas medianas (mínimo 769px) */
+@media (min-width: 769px) {
+    #react-tarjeta {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-gap: 20px;
+        margin: 10px 30px;
+    }
+
+    .izquieda {
+        width: 65%;
+    }
+
+    .derecha {
+        width: 250px;
+    }
+}
+
+/* Pantallas grandes (mínimo 1210px) */
+@media (min-width: 1210px) {
+    #react-tarjeta {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 200px;
+        margin: 10px 30px;
+    }
+
+    .container-propio {
+        gap: 20px;
+    }
+
+    .izquieda {
+        min-width: 80%;
+    }
+
+    .derecha {
+        width: 300px;
+    }
+}

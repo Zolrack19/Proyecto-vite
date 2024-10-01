@@ -1,0 +1,13 @@
+
+.listado > li::marker {
+    color: rgb(188, 188, 188);
+}
+
+.listado > li {
+    text-align: left;
+    font-size: 14px;
+    padding: 6px 0%;
+    line-height: 16px;
+}
+
+
